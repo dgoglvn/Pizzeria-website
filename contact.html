@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact</title>
+
+    <style>
+        h1, p {
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-form input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid rgb(182, 182, 182);
+            border-radius: 25px;
+        }
+
+        button:hover {
+            background-color: aliceblue;
+            color: steelblue;
+            transition: .5s;
+            transform: scale(1.1);
+        }
+
+        textarea {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            border: 2px solid rgb(182, 182, 182);
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="order.html">Order</a></li>
+    </ul>
+
+    <h1>Contact Diego's Pizzeria</h1>
+    <p>Contact us using the form below!</p>
+    <img src="img/contact-us.svg" alt="contact-us" style="width: 150px; height: 150px;">
+    <div class="contact-form">
+        <form method="POST" action="https://www.stonecoldprofessor.com/pizza-contact.php">
+            <input type="text" name="first-name" placeholder="First Name">
+            <br>
+            <input type="text" name="last-name" placeholder="Last Name">
+            <br>
+            <input type="text" name="email" placeholder="Email"> 
+            <br><textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <br><button type="submit">Send</button>
+            <button type="reset">Clear</button>
+        </form>
+    </div>
+</body>
+</html>
